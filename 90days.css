@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?cs=srgb&dl=pexels-lukas-317355.jpg&fm=jpg"); */
+  background-image: url("https://www.cytrobit.com/pexels-lukas-317355sm1.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+  border-radius: 1em;
+  padding: 0 60px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+h1#mainHeader {
+  text-align: center;
+  width: 100%;
+  /* padding: 30px 0; */
+}
+
+span {
+  color: #ffb25b;
+  background-color: #00346f;
+  padding: 4px 6px;
+  border-radius: 50%;
+  border: 4px solid #ffb25b;
+  transition: 0.4s ease-in-out;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+span.anime {
+  background-color: #d10000;
+  color: #eaeaea;
+  border: 4px solid #eaeaea;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+#generate {
+  position: relative;
+  width: 212px;
+  font-size: 20px;
+  background-color: #00346f;
+  color: #ffb25b;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: 2px solid #ffb25b;
+  border-radius: 5px;
+  outline: none !important;
+  transition: 0.3s ease-in-out;
+}
+
+#generate:hover {
+  border: 2px solid #ce6d00;
+  color: #ce6d00;
+  cursor: pointer;
+}
+
+label {
+  font-size: 24px;
+}
+
+input#userDate {
+  background-color: #00346f;
+  color: #ffb25b;
+  font-size: 22px;
+  text-align: right;
+  border: 2px solid #ffb25b;
+  border-radius: 5px;
+  outline: none !important;
+}
+
+p#printDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00346f;
+  color: #ffb25b;
+  height: 81px;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 2px solid #ffb25b;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  font-family: "Reenie Beanie", cursive;
+  text-align: center;
+  font-size: 32px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: #00428d;
+  font-weight: bold;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  /* font-size: 20px;*/
+  color: #00162f;
+  text-shadow: 0 3px 4px #ffffff;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+footer a:hover {
+  color: #002b9f;
+  text-shadow: 0 3px 8px #ffffff;
+  transform: scale(1.02);
+}
+
+.social {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+  margin: 0 10px;
+}
+
+.social a img:first-of-type {
+  width: 180%;
+}
+
+.social a img {
+  max-width: 100%;
+  transform: scale(1);
+  transition: 0.7s;
+}
+
+.social a img:hover {
+  transform: scale(1.17);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    height: 74vh;
+  }
+
+  h2 {
+    padding: 10px 0;
+  }
+
+  .social {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 72vh;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0;
+  }
+
+  h1#mainHeader {
+    padding: 40px 0;
+    font-size: 23px;
+  }
+
+  h2 {
+    padding: 0 5px 10px 5px;
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input#userDate {
+    margin-top: 0px;
+  }
+
+  button#generate {
+    margin-bottom: 20px;
+  }
+
+  p#printDate {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  footer {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  button#generate {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .container {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  h1#mainHeader {
+    padding: 0;
+    font-size: 23px;
+  }
+
+  .container {
+    height: 85vh;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0;
+  }
+
+  button#generate {
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  p#printDate {
+    width: 60%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .social {
+    display: none;
+  }
+}

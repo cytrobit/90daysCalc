@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+  <!--    
+        written by Marcin Ciesielski at January the 19th, Gniezno 2020 
+        contact me at:  info@cytrobit.com                  
+        find me at: www.cytrobit.com
+        https://www.facebook.com/cytro8it        
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcin Ciesielski" />
+    <meta property="og:title" content="Kalkulator 90 dni ubezpieczenia" />
+    <meta property="og:url" content="http://cytrobit.com/90days.html" />
+    <meta property="og:description" content="Wybierz datę i oblicz 90 dni ubezpieczenia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://cytrobit.com/logo22.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="90 dni ubezpieczenia Logo" />
+    <title>Obliczanie 90 dni ubezpieczenia</title>
+    <link rel="icon" href="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/344/external-calendar-time-smashingstocks-glyph-smashing-stocks.png" />
+    <link rel="shortcut icon" href="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/344/external-calendar-time-smashingstocks-glyph-smashing-stocks.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="90days.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="mainHeader">Oblicz <span>90</span> dni ubezpiecznia</h1>
+      <h2>Podaj datę, od której ma zacząć się ubezpiecznie:</h2>
+      <label for="userDate"> <input type="date" id="userDate" required /></label><br />
+      <button id="generate">Oblicz</button>
+
+      <h2>Ubezpieczenie do dnia:</h2>
+      <p id="printDate"></p>
+    </div>
+    <div class="social">
+      <a href="https://facebook.com/cytro8it" target="_blank"
+        ><img src="https://img.icons8.com/doodle/452/facebook-new.png" alt="facebook logo"
+      /></a>
+      <a href="mailto:emsique@gmail.com?subject=Oblicz 90 dni" target="_blank"
+        ><img src="https://img.icons8.com/doodle/452/email-sign.png" alt="e-mail logo"
+      /></a>
+    </div>
+    <footer>
+      &copy;<a href="https://facebook.com/cytro8it" target="_blank">Marcin Ciesielski</a>2020
+    </footer>
+
+    <script src="90days.js"></script>
+  </body>
+</html>
