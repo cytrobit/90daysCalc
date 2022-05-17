@@ -16,12 +16,14 @@ body {
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-  min-height: -moz-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   letter-spacing: 1px;
   outline: none !important;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 .container {
