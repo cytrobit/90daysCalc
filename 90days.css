@@ -16,7 +16,10 @@ body {
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: 100vh;
   letter-spacing: 1px;
   outline: none !important;
 }
