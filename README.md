@@ -17,4 +17,4 @@ Third navy/blue area from the top will display the proper date - the ninetieth d
 Hope you will enjoy it. 
 
 
-Link to working app: [here] (https://www.cytrobit.com/90days)
+Link to working app: (https://www.cytrobit.com/90days)
