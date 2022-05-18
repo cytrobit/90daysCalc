@@ -30,7 +30,7 @@ html {
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 60vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@ html {
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   border-radius: 1em;
-  padding: 0 60px;
+  padding: 60px;
   margin: 0 auto;
   text-align: center;
 }
@@ -173,7 +173,7 @@ footer a:hover {
 
 .social {
   position: absolute;
-  right: 50px;
+  right: 150px;
   bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -197,7 +197,7 @@ footer a:hover {
 
 @media only screen and (max-width: 900px) {
   .container {
-    height: 74vh;
+    /* height: 74vh; */
   }
 
   h2 {
@@ -215,10 +215,9 @@ footer a:hover {
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 72vh;
-    margin: 0 auto;
+    
     width: 95%;
-    padding: 0;
+    padding: 0 10px 30px 10px;
   }
 
   #munch {
@@ -258,10 +257,11 @@ footer a:hover {
     font-size: 20px;
   }
 
-  footer {
-    width: 100%;
-    font-size: 24px;
-    letter-spacing: 1px;
+  .social {
+    position: absolute;
+    right: 50%;
+    transform:  translateX(50%);
+    bottom: 40px;
   }
 
   .social a {
@@ -270,28 +270,16 @@ footer a:hover {
     margin: 0 10px;
   }
 
-  .social {
-    position: absolute;
-    right: 50%;
-    transform:  translateX(50%);
-    bottom: 40px;
+  footer {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 1px;
   }
-
-  /* .social {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 400px) {
   button#generate {
     margin-bottom: 20px;
-  }
-
-  .social {
-    position: absolute;
-    right: 50%;
-    transform:  translateX(50%);
-    bottom: 30px;
   }
 
   footer {
@@ -301,7 +289,7 @@ footer a:hover {
 
 @media only screen and (max-width: 330px) {
   .container {
-    height: 80vh;
+    /* height: 80vh; */
   }
 }
 
@@ -311,11 +299,19 @@ footer a:hover {
     font-size: 23px;
   }
 
+  #munch {
+    position: absolute;
+    top: -30px;
+    right: 40px;
+    height: 32px;
+    width: auto;
+  }
+
   .container {
-    height: 85vh;
+    height: 100%;
     margin: 0 auto;
-    width: 95%;
-    padding: 0;
+    /* width: 95%; */
+    padding: 10px;
   }
 
   button#generate {
@@ -334,8 +330,19 @@ footer a:hover {
     font-size: 20px;
   }
 
+  .social {
+    position: absolute;
+    bottom: 4px;
+  }
+
+  .social a {
+    width: 34px;
+    height: 34px;
+    margin: 0 10px;
+  }
+
   footer {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 0px;
   }
 
