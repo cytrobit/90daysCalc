@@ -286,6 +286,17 @@ footer a:hover {
   button#generate {
     margin-bottom: 20px;
   }
+
+  .social {
+    position: absolute;
+    right: 50%;
+    transform:  translateX(50%);
+    bottom: 30px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 330px) {
