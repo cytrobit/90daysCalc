@@ -60,7 +60,6 @@ html {
 h1#mainHeader {
   text-align: center;
   width: 100%;
-  /* padding: 30px 0; */
 }
 
 span {
@@ -140,6 +139,30 @@ p#printDate {
   border: 2px solid #ffb25b;
 }
 
+.social {
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+  margin: 0 10px;
+}
+
+.social a img {
+  max-width: 100%;
+  transform: scale(1);
+  transition: 0.7s;
+}
+
+.social a img:hover {
+  transform: scale(1.17);
+}
+
 footer {
   display: block;
   position: absolute;
@@ -171,34 +194,7 @@ footer a:hover {
   transform: scale(1.02);
 }
 
-.social {
-  position: absolute;
-  right: 150px;
-  bottom: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.social a {
-  width: 44px;
-  height: 44px;
-  margin: 0 10px;
-}
-
-.social a img {
-  max-width: 100%;
-  transform: scale(1);
-  transition: 0.7s;
-}
-
-.social a img:hover {
-  transform: scale(1.17);
-}
-
 @media only screen and (max-width: 900px) {
-  .container {
-    /* height: 74vh; */
-  }
 
   h2 {
     padding: 10px 0;
@@ -215,7 +211,6 @@ footer a:hover {
 
 @media only screen and (max-width: 600px) {
   .container {
-    
     width: 95%;
     padding: 0 10px 30px 10px;
   }
@@ -287,12 +282,6 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 330px) {
-  .container {
-    /* height: 80vh; */
-  }
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   h1#mainHeader {
     padding: 0;
@@ -310,7 +299,6 @@ footer a:hover {
   .container {
     height: 100%;
     margin: 0 auto;
-    /* width: 95%; */
     padding: 10px;
   }
 
@@ -345,8 +333,4 @@ footer a:hover {
     font-size: 18px;
     margin-bottom: 0px;
   }
-
-  /* .social {
-    display: none;
-  } */
 }
